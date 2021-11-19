@@ -1,0 +1,49 @@
+{
+  "templateKeyName": "抄表类型",
+  "templateName": "抄表类型",
+  "searchName": "抄表类型",
+  "directories": "property",
+  "searchCode": "typeId",
+  "templateCode": "meterType",
+  "templateKey": "typeId",
+  "columns": [
+    {
+      "hasDefaultValue": false,
+      "limitParam": "12",
+      "code": "typeName",
+      "limitErrInfo": "名称不能超过12",
+      "cnCode": "名称",
+      "limit": "maxLength",
+      "show": true,
+      "inputType": "input",
+      "required": true,
+      "desc": "必填，名称"
+    },
+    {
+      "hasDefaultValue": false,
+      "limitParam": "200",
+      "code": "remark",
+      "limitErrInfo": "说明不能超过200",
+      "cnCode": "说明",
+      "limit": "maxLength",
+      "show": true,
+      "inputType": "input",
+      "required": true,
+      "desc": "说明"
+    }
+  ],
+  "conditions": [
+    {
+      "whereCondition": "equal",
+      "code": "typeId",
+      "name": "类型ID",
+      "inputType": "input"
+    },
+    {
+      "whereCondition": "equal",
+      "code": "typeName",
+      "name": "名称",
+      "inputType": "input"
+    }
+  ]
+}
